@@ -1,0 +1,75 @@
+10. Napisz program, który poda statystki dowolnego tekstu pobranego z pliku, wypisze takie dane jak, np:
+   ilość użyć poszczególnych literek i cyfr, ilość wyrazów, zdań etc.
+   Niech będzie możliwość wyboru tryb case sensitivity.
+   Niech program tworzy też plik ze statystyką swojej pracy. Czyli np:
+   "
+   Ilość uruchomień programu:
+   10
+   Przeanalizowanych znaków:
+   1223435991 
+   Znalezionych wyrazów:
+   2399
+   Znalezionych liczb:
+   122
+   Znalezionych małych liter:
+   68923455
+   etc
+   "
+   
+   Oczywiście dopuszalna jest ułomność takiego programu.
+   Dokładne policzenie ilość zdań nie jest trywialne ale może jakiś fajny algorytm uda się Wam wymyślić.
+   Rodzaje statystyk zostawiam waszej fantazji :)
+   Przydatny generator tekstu: http://lipsum.pl/
+   
+11. Stwórz program który przyjmie w parametrze ścieżkę do dowolnego pliku (CSV lub Excel - jaki wolicie), który będzie zawierał dane tabelaryczne. 
+   W pliku pierwszy wiersz będzie zawierał nazwy kolumn a pozostałe wiersze dane.
+   Ilość kolum i wierszy może być dowolna. Program ma narysować tabelę z danymi, analogicznie do wcześniejszego zadania na rysowanie tabeli.
+   Pamiętajmy by wydzielać części reużywalne do oddzielnych funkcji/modułów (np.: odczyt danych, przygotowanie danych, rysowanie tabeli). 
+   Przykład: 
+   +------------+------------+------------+
+   | klucz1     | klucz 2    | klucz 3    |
+   +------------+------------+------------+
+   | row 1 col1 | row 1 col2 | row 1 col3 |
+   +------------+------------+------------+
+   | row 2 col1 | row 2 col2 | row 2 col3 |
+   +------------+------------+------------+
+
+12. Napisz program który będzie pamiętnikiem. Niech posiada opcje:
+   - dodawania wpisu do pamiętnika pod określną datą
+   - wyświetlanie wszystkich wpisów z pamiętnika
+   - wyświetlanie wszystkich wpisów dla określonej daty
+   - przeglądanie pojedyńczych wpisów z pamiętnika, opcja: "następny", "poprzedni"
+
+13. Napisz program który z dowolnej strony WWW przeczyta wszystkie obrazki
+     zmniejszy je do szerowkości 320px (z zachowaniem proporcji jeśli chodzi o wysokość) i wyśle w mailu jako załączniki (a może nawet jako plik ZIP?). W treści maila niech będzie lista plików
+     z informacją z jakiego rozmiaru zostały zmniejszone/zwiększone i jaki był zysk/strata jeśli chodzi o rozmiar poszczególnego pliku jak i sumarycznie wszystkich.
+
+14. Zaskocz mnie :) Wymyśl swój własny program. Coś co np rozwiązuje Twój realny problem z pracy czy z życia codziennego.
+     Postarajcie się wymyśleć taki programik w którym użyjecie jak najwięcej poznanych rzeczy, np: łapanie wyjątków, pętle, operacje na plikach, korzystanie z nowych instalowanych z zewnątrz modułów etc.
+     Możecie też używać czegoś czego nie było na zajęciach (np kolorowanie tekstu w konsoli) a znaleźliście w internecie - byle byście rozumieli napisany kod :) 
+     Przykłady: "zmieniacz - zmiana nazw wielu plików na raz", "kalambury - generator haseł", "enigma - szyfrowanie, odszyfrowywanie tekstu"... 
+     Liczę na waszą inwencję, programy nie muszą być użyteczne - mogą być po prostu zabawne :)
+ 
+15. Stworzenie "programu nakładki" na dotychczasowe programiki.
+   Po wyborze danego programu z "menu" uruchomi się odpowiedni i po wykonaniu danej operacji zapyta czy wykonać inny program.
+   Sugeruje by każdy podprogram był oddzielną funkcją a może nawet modułem.
+   Miejmy na uwadze to by w przyszłości ten program rozwijać podpinając kolejny "podprogram" - powinno to być najprostsze jak się da (np tylko zmiana menu i jakiegoś jednego ifa?:) )
+   Przypominam, że np funkcje można przypisywać do zmiennych. 
+   Przykład przy uruchomieniu:
+   "
+   Witaj w Multitool Python Program by Intel - wersja beta ;)
+   Wybierz program który cię interesuje:
+   1) Rysowanie kwadratu o zadanych parametrach
+   2) Rysowanie piramidy o określonej wysokości
+   3) Rozmienianie pieniędzy
+   4) Przeliczanie F->C
+   5) Przeliczanie C->F
+   6) ...
+   7) ...
+   R) Wybierz program losowo bo nie wiem czego szukam:)
+   X) Wyjście z programu
+   Twój wybór: _
+   "
+
+16. Dodajcie do multitoola licznik uruchomienia każdego podprogramu i samego multitoola. Dane możecie zapisać w dowolnym pliku CSV/pickle/Excel. 
+     Do menu dodajcie pozycję/podprogramik "S - Statystyki" który w przyjaznej formie przedstawi wszystkie statystyki.
