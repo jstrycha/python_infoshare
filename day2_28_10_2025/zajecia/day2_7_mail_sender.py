@@ -20,16 +20,16 @@ import smtplib
 from email.mime.text import MIMEText
 
 # dane logowania i dane serwera
-login = "pythonintel@int.pl"
-haslo = "isapython;2025"
+login = "test_python@interia.pl"
+haslo = "testpython12345!"
 smtp_server = "poczta.int.pl"
 port = 465 #zabezpieczenie: SSL
 
 # 2. przygotowuję maila z tematem treścią i odbiorcą
 mail = MIMEText('Testowy mail')
 mail['Subject'] = 'Test'
-mail['To'] = 'pythonintel@int.pl'
-mail['From'] = 'pythonintel@int.pl'
+mail['To'] = 'test_python@interia.pl'
+mail['From'] = 'test_python@interia.pl'
 
 # 3. tworze obiekt mailera
 #   a. witam się z serwerem smtp – tworzę połączenie

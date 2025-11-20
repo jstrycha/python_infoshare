@@ -53,7 +53,7 @@ def save_diary() -> None:
 def add_entry() -> None:
     """Dodawanie wpisu do pamiętnika pod określoną datą."""
     print("\n--- Dodawanie wpisu ---")
-    date = input("Podaj datę (np. 2025-11-18): ").strip()
+    date = input("Podaj datę (np. 2025-11-18): ").strip() # data w formacie ISO
     # tu by można się pokusić o branie np. timestampu, ale na potrzeby łatwiejszego testowania bierzemy datę od użytkownika
     # branie daty też można by ulepszyć, bo w tej chwili to nie jest użytkowniko-odporne (może to zrobię jak ogarnę pozostałe zadania do zrobienia :D)
 
