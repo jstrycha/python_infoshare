@@ -1,0 +1,18 @@
+{# dodajemy dyrektywę #}
+{% extends "index.html" %}
+
+
+{% block page_title %}
+    Hello {{ t_name }}
+{% endblock %}
+
+{% block main_content %}
+    <h1>
+        Hi <u>{{ t_name }}</u>
+        twoje imię ma {{ t_name | length }} znaków
+        {% if t_age is defined and t_age | length > 0 %}
+            i masz {{ t_age }} lat
+        {% endif %}
+    </h1>
+{% endblock %}
+<!--- --->
