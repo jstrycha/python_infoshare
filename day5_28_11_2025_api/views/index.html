@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+       <title>
+            {% block page_title %}
+                Zwierzyniec
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <p style="color: red">Nasze zwierzaki ;)</p>
+        <a href="{{ url_for('add_pet') }}">Dodaj zwierzaka</a>
+        <br>
+        <a href = "{{ url_for('delete_all_pets') }}"> Usuń wszystko </a>
+        {% block main_content %}
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            {% for pet in pets %}
+                <tr>
+                    <td>{{ pet.id }}</td>
+                    <td>{{ pet.name | truncate(30, True, '...') }}</td>
+                    <td>{{ pet.status }}</td>
+                    <td>
+                        <a href = "{{ url_for('delete_pet', id=pet.id) }}"> --- Usuń --- </a>
+                        <a href = "{{ url_for('edit_pet', id=pet.id) }}"> === Edytuj === </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </table>
+        {% endblock %}
+    </body>
+</html>

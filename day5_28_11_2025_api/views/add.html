@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dodaj zwierzaka</title>
+</head>
+<body>
+    <h2>Dodaj nowe zwierzę</h2>
+
+    <form method="POST">
+        <label>ID (opcjonalnie):</label><br>
+        <input type="number" name="id" placeholder="np. 123"><br><br>
+
+        <label>Nazwa:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Status:</label><br>
+        <select name="status">
+            <option value="available">available</option>
+            <option value="pending">pending</option>
+            <option value="sold">sold</option>
+        </select><br><br>
+
+        <button type="submit">Dodaj</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('get_pets') }}">← wróć</a>
+</body>
+</html>
